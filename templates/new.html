@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="static/css/list.css">
+</head>
+<body>
+    <div class="main">
+        <h1>New Assignment</h1>
+        <form action="/add" method="GET">
+            <select name="subject" class="w33">
+                <option value="Homeroom Guidance">Homeroom Guidance</option>
+                <option value="Filipino">Filipino</option>
+                <option value="ICT">ICT</option>
+                <option value="MAPEH">MAPEH</option>
+                <option value="ESP">ESP</option>
+                <option value="Chemistry">Chemistry</option>
+                <option value="Research">Research</option>
+                <option value="Science">Science</option>
+                <option value="English">English</option>
+                <option value="AP">AP</option>
+                <option value="Mathematics">Mathematics</option>
+            </select>
+              <input name="due" class="w33" type="datetime-local" id="datetime">
+              <input name="type" placeholder="Subject Type" class="w33" type="text"><br><br>
+              <input name="title" placeholder="Title" type="text"><br>
+              <textarea name="description" placeholder="Description" name="" id="" cols="30" rows="10"></textarea><br>
+              <div class="submit-parent"><input type="submit" value="New Assignment"></div>
+        </form>
+    </div>
+</body>
+</html>

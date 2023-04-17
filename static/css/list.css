@@ -1,0 +1,82 @@
+*{font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+body {
+    margin: 0;
+    padding: 0;
+}
+.main {
+    width: 800px;
+    margin: 0 auto;
+    position: relative;
+}
+.title, .subject {
+    margin: 0;
+}
+.title {
+    font-weight: bold;
+    font-size: 20px;
+}
+.assignment {
+    padding: 10px 0;
+    transition: all 100ms ease;
+}
+.assignment:hover {
+    background-color: #00000011;
+}
+.assignment:active {
+    transform: scale(0.95);
+    background-color: #00000055;
+    outline: 2px solid #00000099;
+}
+.icon {
+    height: 50px;
+    float: left;
+    margin: 0 10px;
+}
+
+.new {
+    border: 0; border-radius: 0; background-color: inherit;
+    padding: 10px;
+    background-color: red;
+    color: white;
+    float: right;
+    transition: all 100ms ease;
+}
+.new:hover {
+    background-color: #aa0000ff;
+}
+.new:active {
+    background-color: #660000ff;
+    transform: scale(0.95);
+    outline: 2px solid #00000099;
+}
+
+input, select, textarea {
+    border: 3px solid gray;
+    padding: 15px;
+    margin: 5px 0;
+    resize: none;
+    width: 100%;
+}
+
+.w33 {
+    width: 29.95%;
+}
+.submit-parent {
+    width: 100%;
+    text-align: right;
+}
+input[type="submit"] {
+    background-color: red;
+    border:0;
+    display: block;
+    color: white;
+    width: 200px;
+    float: right;
+    box-sizing: border-box;
+    transition: all 0.1s;
+}
+input[type="submit"]:active {
+    background-color: rgb(175, 0, 0);
+    outline:2px solid gray;
+    transform: scale(0.90);
+}
