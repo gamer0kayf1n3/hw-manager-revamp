@@ -10,8 +10,8 @@
 <body>
     <div class="main">
         <h1>New Assignment</h1>
-        <form action="/add" method="GET">
-            <select name="subject" class="w33">
+        <form action="/api/add" method="POST">
+            <select required name="subject" class="w33">
                 <option value="Homeroom Guidance">Homeroom Guidance</option>
                 <option value="Filipino">Filipino</option>
                 <option value="ICT">ICT</option>
@@ -24,9 +24,9 @@
                 <option value="AP">AP</option>
                 <option value="Mathematics">Mathematics</option>
             </select>
-              <input name="due" class="w33" type="datetime-local" id="datetime">
-              <input name="type" placeholder="Subject Type" class="w33" type="text"><br><br>
-              <input name="title" placeholder="Title" type="text"><br>
+              <input required name="due" class="w33" type="datetime-local" id="datetime">
+              <input required name="type" placeholder="Subject Type" class="w33" type="text"><br><br>
+              <input required name="title" placeholder="Title" type="text"><br>
               <textarea name="description" placeholder="Description" name="" id="" cols="30" rows="10"></textarea><br>
               <div class="submit-parent"><input type="submit" value="New Assignment"></div>
         </form>

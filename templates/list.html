@@ -11,13 +11,15 @@
     <div class="main">
         <h1>Your Assignments</h1>
         {% for datap in data: %}
-            <div class="assignment">
-                <img class="icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Circle-icons-clipboard.svg/1200px-Circle-icons-clipboard.svg.png" alt="">
-                <p class="title">{{ data[datap].title }}</p>
-                <p class="subject">{{ data[datap].subject }}</p>
-            </div>
+            <a style="text-decoration: none; color: black;" href="/desc/{{ datap }}">
+                <div class="assignment">
+                    <img class="icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Circle-icons-clipboard.svg/1200px-Circle-icons-clipboard.svg.png" alt="">
+                    <p class="title">{{ data[datap].title }}</p>
+                    <p class="subject">{{ data[datap].subject }}</p>
+                </div>
+            </a>
         {% endfor %}
-        <button class="new">New</button>
+        <button class="new" onclick="location.href='/add'">New</button>
     </div>
 </body>
 </html>
